@@ -1,0 +1,8 @@
+# Main theme library.
+global:
+  version: 1.x
+  js:
+    dist/js/script.js: {}
+  css:
+    theme:
+      dist/css/style.css: {}

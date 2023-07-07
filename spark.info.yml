@@ -1,0 +1,14 @@
+name: Spark
+type: theme
+base theme: false
+description: A custom Drupal 10 with Bootstrap 5.
+package: Custom
+core_version_requirement: ^10
+screenshot: screenshot.png
+libraries:
+  - spark/global
+regions:
+  header: 'Header'
+  breadcrumb: 'Breadcrumb'
+  content: 'Content'
+  footer: 'Footer'

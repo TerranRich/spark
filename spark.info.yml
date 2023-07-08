@@ -1,7 +1,7 @@
 name: Spark
 type: theme
 base theme: false
-description: A custom Drupal 10 with Bootstrap 5.
+description: A custom Drupal 10 starter theme with some default templates and SASS folder setup.
 package: Custom
 core_version_requirement: ^10
 screenshot: screenshot.png

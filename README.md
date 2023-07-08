@@ -1,2 +1,2 @@
-# spark
-A custom Drupal 10 theme that includes Bootstrap 5.3.x as a dependency and some starter Twig template files.
+# Spark ✨
+A custom Drupal 10 starter theme with a default SASS folder setup and some starter Twig template files.

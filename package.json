@@ -1,7 +1,7 @@
 {
   "name": "spark",
   "version": "1.0.0",
-  "description": "A custom Drupal 10 with Bootstrap 5.",
+  "description": "A custom Drupal 10 theme with Bootstrap 5.",
   "main": "gulpfile.js",
   "author": "Richard Brum <richardbrum.com>",
   "scripts": {

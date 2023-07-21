@@ -2,9 +2,12 @@
 global:
   version: 1.x
   js:
+    dist/bootstrap/5.3.0/js/bootstrap.min.js: { minified: true }
     dist/js/script.js: {}
   css:
-    theme:
+    base:
+      dist/bootstrap/5.3.0/css/bootstrap.min.css: { minified: true }
+    layout:
       dist/css/style.css: {}
   dependencies:
     - core/drupal

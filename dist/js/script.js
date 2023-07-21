@@ -2,16 +2,19 @@
  * @file
  * Spark behaviors.
  */
-(function (Drupal) {
-
+(function (Drupal, $, once) {
   'use strict';
 
   Drupal.behaviors.spark = {
-    attach (context, settings) {
+    attach(context) {
+      if (once('spark', 'html').length) {
+        $(function () {
 
-      console.log('It works!');
+          console.log('It works!');
 
+        });
+      }
     }
   };
 
-} (Drupal));
+}(Drupal, jQuery, once));

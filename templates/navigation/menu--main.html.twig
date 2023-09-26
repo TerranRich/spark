@@ -21,8 +21,8 @@
 {% import _self as menus %}
 
 {#
-We call a macro which calls itself to render the full tree.
-@see http://twig.sensiolabs.org/doc/tags/macro.html
+  We call a macro which calls itself to render the full tree.
+  @see http://twig.sensiolabs.org/doc/tags/macro.html
 #}
 {{ menus.build_menu(items, attributes, 0) }}
 
@@ -30,7 +30,7 @@ We call a macro which calls itself to render the full tree.
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
-    <ul{{ attributes.addClass('navbar-nav mr-auto') }}>
+    <ul{{ attributes.addClass('navbar-nav') }}>
     {% else %}
     <ul class="dropdown-menu">
     {% endif %}
@@ -45,14 +45,12 @@ We call a macro which calls itself to render the full tree.
   {% import _self as menus %}
   {%
     set list_item_classes = [
-    'nav-item',
-    item.is_expanded ? 'dropdown'
-  ]
+      item.is_expanded ? 'dropdown'
+    ]
   %}
   {%
     set link_class = [
-      menu_level == 0 ? 'nav-item',
-      menu_level == 0 ? 'nav-link',
+      menu_level == 0 ? 'nav-item d-block p-3',
       item.in_active_trail ? 'active',
       menu_level == 0 and (item.is_expanded or item.is_collapsed) ? 'dropdown-toggle',
       menu_level > 0 ? 'dropdown-item',

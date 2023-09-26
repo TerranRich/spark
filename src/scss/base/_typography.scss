@@ -5,3 +5,15 @@ body {
   color: $text-color;
   font: normal 125% / 1.4 $text-font-stack;
 }
+
+/**
+ * Temp fix for:
+ * Issue #3233533: Core .placeholder class conflicts with new Bootstrap
+ * .placeholder class: https://www.drupal.org/project/drupal/issues/3233533
+ */
+em.placeholder {
+  background-color: unset !important;
+  cursor: unset !important;
+  opacity: unset !important;
+  vertical-align: unset !important;
+}

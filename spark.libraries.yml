@@ -2,11 +2,11 @@
 global:
   version: 1.x
   js:
-    dist/bootstrap/5.3.1/js/bootstrap.min.js: { minified: true }
+    dist/bootstrap/5.3.3/js/bootstrap.min.js: { minified: true }
     dist/js/script.js: {}
   css:
     base:
-      dist/bootstrap/5.3.1/css/bootstrap.min.css: { minified: true }
+      dist/bootstrap/5.3.3/css/bootstrap.min.css: { minified: true }
     layout:
       dist/css/style.css: {}
   dependencies:

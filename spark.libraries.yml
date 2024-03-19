@@ -2,7 +2,7 @@
 global:
   version: 1.x
   js:
-    dist/bootstrap/5.3.3/js/bootstrap.min.js: { minified: true }
+    dist/bootstrap/5.3.3/js/bootstrap.bundle.min.js: { minified: true }
     dist/js/script.js: {}
   css:
     base:

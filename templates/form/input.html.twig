@@ -13,7 +13,9 @@
 
 {% if attributes.hasClass('button') and not attributes.hasClass('field-add-more-submit') %}
   <input{{ attributes.addClass('btn btn-primary') }} />
-{% else %}
+{% elseif attributes.hasClass('form-radio') %}
   <input{{ attributes }} />
+{% else %}
+  <input{{ attributes.addClass('form-control') }} />
 {% endif %}
 {{ children }}

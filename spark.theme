@@ -25,3 +25,24 @@ function spark_preprocess_page(array &$variables): void {
 function spark_preprocess_node(array &$variables): void {
 
 }
+
+/**
+ * Preprocess variables for the menu local task template.
+ * @param $variables
+ *
+ * @TODO Add to spark base theme!
+ */
+function spark_preprocess_menu_local_task(&$variables) {
+  // Check if the current page matches the task's link
+  $active_class = (
+    $variables['element']['#link']['url']->toString()
+    === \Drupal::request()->getRequestUri()
+  ) ? 'active' : '';
+
+  $variables['element']['#link']['url']->setOption('attributes', [
+    'class' => [
+      'nav-link',
+      $active_class,
+    ],
+  ]);
+}

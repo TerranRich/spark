@@ -23,23 +23,23 @@ a {
   color: #e50050;
   text-decoration: none; }
   a:hover, a:active, a:focus, a:focus-within {
-    color: #222222;
+    color: var(--bs-body-color);
     text-decoration: underline; }
 
 /**
  * Basic typography style for copy text
  */
 body {
-  color: #222222;
-  font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  color: var(--bs-body-color);
+  font: normal 100%/1.4 "Roboto", "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
 /**
  * Temp fix for:
- * 
+ *
  * Issue #3233533: Core .placeholder class conflicts with new Bootstrap
  * .placeholder class
  * https://www.drupal.org/project/drupal/issues/3233533
- * 
+ *
  * Issue #3246827: Fix em.placeholder style from Bootstrap 5 base styling with
  * the Drupal core placeholder
  * https://www.drupal.org/project/vartheme_bs5/issues/3246827
